@@ -80,23 +80,26 @@ document.querySelectorAll('.nav__links a').forEach(link => {
     });
 });
 
-// ===== RESUME DOWNLOAD (Mobile-Friendly) =====
+// ===== RESUME DOWNLOAD =====
 const downloadBtns = document.querySelectorAll('#downloadResumeBtn, #heroResumeBtn, #resumeNavBtn');
 
 downloadBtns.forEach(btn => {
-    btn.addEventListener('click', function (e) {
+    btn.addEventListener('click', function(e) {
         e.preventDefault();
-
+        
+        // Use full URL for GitHub Pages
+        const resumeUrl = 'https://MdBilalNad.github.io/bilal-portfolio/assets/resume.pdf';
+        
         // Check if it's a mobile device
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
+        
         if (isMobile) {
-            // Mobile: Open PDF in new tab
-            window.open('assets/resume.pdf', '_blank');
+            // On mobile, open in new tab
+            window.open(resumeUrl, '_blank');
         } else {
-            // Desktop: Download directly
+            // On desktop, download
             const link = document.createElement('a');
-            link.href = 'assets/resume.pdf';
+            link.href = resumeUrl;
             link.download = 'Mohammed_Bilal_Nadeem_Resume.pdf';
             document.body.appendChild(link);
             link.click();
