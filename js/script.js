@@ -80,23 +80,34 @@ document.querySelectorAll('.nav__links a').forEach(link => {
     });
 });
 
-// ===== RESUME DOWNLOAD =====
+// ===== RESUME DOWNLOAD (Mobile-Friendly) =====
 const downloadBtns = document.querySelectorAll('#downloadResumeBtn, #heroResumeBtn, #resumeNavBtn');
 
 downloadBtns.forEach(btn => {
-    btn.addEventListener('click', function(e) {
+    btn.addEventListener('click', function (e) {
         e.preventDefault();
-        // Actual resume download
-        const link = document.createElement('a');
-        link.href = 'assets/resume.pdf';
-        link.download = 'Mohammed_Bilal_Nadeem_Resume.pdf';
-        link.click();
+
+        // Check if it's a mobile device
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            // Mobile: Open PDF in new tab
+            window.open('assets/resume.pdf', '_blank');
+        } else {
+            // Desktop: Download directly
+            const link = document.createElement('a');
+            link.href = 'assets/resume.pdf';
+            link.download = 'Mohammed_Bilal_Nadeem_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     });
 });
 
 // ===== SMOOTH SCROLL for anchor links =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         if (href === '#') return;
         e.preventDefault();
