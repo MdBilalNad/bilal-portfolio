@@ -88,7 +88,7 @@ downloadBtns.forEach(btn => {
         e.preventDefault();
         
         // Use full URL for GitHub Pages
-        const resumeUrl = 'https://MdBilalNad.github.io/bilal-portfolio/assets/resume.pdf';
+        const resumeUrl = 'https://MdBilalNad.github.io/bilal-portfolio/assets/Resume.pdf';
         
         // Check if it's a mobile device
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
