@@ -1,0 +1,27 @@
+{
+  "name": "bilal-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive portfolio website for Mohammed Bilal Nadeem - AI/ML Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "build": "echo 'Build complete'",
+    "dev": "live-server --port=3000 --open=./index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "ai-ml",
+    "engineer",
+    "data-scientist",
+    "interactive"
+  ],
+  "author": "Mohammed Bilal Nadeem",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "font-awesome": "^4.7.0"
+  }
+}

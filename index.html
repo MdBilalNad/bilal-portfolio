@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Bilal Nadeem | AI/ML Engineer</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome CDN (fallback) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ===== ORBS ===== -->
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+
+    <!-- ===== NAV OVERLAY ===== -->
+    <div class="nav__overlay" id="navOverlay"></div>
+
+    <!-- ===== NAV ===== -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="nav__logo">MBN<span>.</span></a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#resume" class="nav__resume-btn" id="resumeNavBtn"><i class="fas fa-download"></i>
+                        Resume</a></li>
+            </ul>
+            <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge"><i class="fas fa-code"></i> &nbsp;AI/ML Engineer</div>
+                <h1 class="hero__name">
+                    Mohammed <br /><span class="highlight">Bilal Nadeem</span>
+                </h1>
+                <p class="hero__title">
+                    <span class="typing" id="typingText"></span>
+                </p>
+                <p class="hero__desc">
+                    Aspiring AI/ML Engineer with strong foundations in Python, machine learning pipelines,
+                    and model deployment. Eager to build intelligent, real-world solutions.
+                </p>
+                <div class="hero__actions">
+                    <a href="#resume" class="btn btn--primary" id="heroResumeBtn">
+                        <i class="fas fa-file-pdf"></i> Download Resume
+                    </a>
+                    <a href="#projects" class="btn btn--outline">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                </div>
+                <div class="hero__socials">
+                    <a href="https://github.com/MdBilalNad" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/bilalnadeem123/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:mdbilalnad117@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero__image-wrapper">
+                <div class="ring"></div>
+                <div class="ring ring-2"></div>
+                <img src="assets/images/Bilal.jpeg" alt="Mohammed Bilal Nadeem" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__label">Expertise</span>
+                <h2 class="section__title">My <span class="highlight">Skills</span></h2>
+                <p class="section__sub">Measurable proficiency across AI/ML, development, and cloud technologies.</p>
+            </div>
+            <div class="skills__grid" id="skillsGrid">
+                <!-- Group 1: AI/ML -->
+                <div class="skill__group" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill__group-title"><i class="fas fa-brain"></i> AI &amp; Machine Learning</div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Python</span><span
+                                class="skill__item-value">92%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Machine Learning</span><span
+                                class="skill__item-value">85%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Data Science</span><span
+                                class="skill__item-value">80%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">NLP / LLM</span><span
+                                class="skill__item-value">72%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="72"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">TensorFlow</span><span
+                                class="skill__item-value">65%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Dev & Tools -->
+                <div class="skill__group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill__group-title"><i class="fas fa-code"></i> Development &amp; Tools</div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Pandas / NumPy</span><span
+                                class="skill__item-value">90%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Scikit-learn</span><span
+                                class="skill__item-value">85%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Git / GitHub</span><span
+                                class="skill__item-value">88%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">SQL / NoSQL</span><span
+                                class="skill__item-value">75%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill__item">
+                        <div class="skill__item-header"><span class="skill__item-name">Flask / Django</span><span
+                                class="skill__item-value">70%</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__bar-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__label">Career</span>
+                <h2 class="section__title">Work <span class="highlight">Experience</span></h2>
+                <p class="section__sub">Building real-world AI solutions in collaborative environments.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline__item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="timeline__item-header">
+                        <span class="timeline__item-title">Data Science Intern</span>
+                        <span class="timeline__item-date">May 2026 – Jul 2026</span>
+                    </div>
+                    <div class="timeline__item-company">Sipher Web Pvt Ltd</div>
+                    <p class="timeline__item-desc">
+                        Developing end-to-end data processing pipelines using Python libraries (Pandas, NumPy,
+                        Matplotlib, Scikit-learn) to clean, analyze, and visualize structured/unstructured data.
+                        Managing version control and collaborative development using Git &amp; GitHub, including
+                        branching, pull requests, and documentation.
+                    </p>
+                    <div class="timeline__item-tech">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+                        <span>Git</span><span>GitHub</span><span>Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__label">Portfolio</span>
+                <h2 class="section__title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section__sub">End-to-end ML solutions with measurable impact.</p>
+            </div>
+            <div class="projects__grid">
+                <!-- Project 1 -->
+                <div class="project__card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project__card-icon"><i class="fas fa-chart-line"></i></div>
+                    <span class="project__card-metric"><i class="fas fa-arrow-up"></i> R² 0.81</span>
+                    <h3 class="project__card-title">Stock Price Prediction Pipeline</h3>
+                    <p class="project__card-desc">
+                        End-to-end ML pipeline predicting S&amp;P 500 stock prices using real-time market data
+                        from yFinance API. Improved Linear Regression R² from 0.62 to 0.81.
+                    </p>
+                    <div class="project__card-tech">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>yFinance</span>
+                    </div>
+                    <a href="https://github.com/MdBilalNad/stock-prediction-pipeline" target="_blank"
+                        class="project__card-link">
+                        View Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project__card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project__card-icon"><i class="fas fa-file-alt"></i></div>
+                    <span class="project__card-metric"><i class="fas fa-check-circle"></i> 92% Accuracy</span>
+                    <h3 class="project__card-title">Resume Analyzer</h3>
+                    <p class="project__card-desc">
+                        Flask web app that compares resumes to job descriptions using TF-IDF vectorization and
+                        cosine similarity. Extracts text from PDF/DOCX and returns match percentage with missing skill
+                        suggestions.
+                    </p>
+                    <div class="project__card-tech">
+                        <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>NLP</span><span>Pandas</span>
+                    </div>
+                    <a href="https://github.com/MdBilalNad/Resume-Analyzer" target="_blank" class="project__card-link">
+                        View Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__label">Academics</span>
+                <h2 class="section__title">Education</h2>
+            </div>
+            <div class="edu__card" data-aos="fade-up">
+                <div class="edu__card-left">
+                    <h3>Bachelors in Computer Science &amp; Engineering</h3>
+                    <p>Integral University &bull; Jul 2024 – Jul 2028</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">
+                        <i class="fas fa-microchip"></i> Specialization: Artificial Intelligence &amp; Cloud Computing
+                    </p>
+                </div>
+                <div class="edu__card-right">
+                    <div class="cgpa">CGPA 7.9</div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary);">/ 10.0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__label">Credentials</span>
+                <h2 class="section__title">Certifications</h2>
+            </div>
+            <div class="certs__grid">
+                <div class="cert__card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fas fa-certificate"></i>
+                    <div class="cert__card-info">
+                        <h4>Deloitte Australia – Tech Job Simulation</h4>
+                        <p>Forage</p>
+                    </div>
+                </div>
+                <div class="cert__card" data-aos="fade-up" data-aos-delay="50">
+                    <i class="fas fa-chart-pie"></i>
+                    <div class="cert__card-info">
+                        <h4>Data Visualization with Cognos Dashboard</h4>
+                        <p>IBM</p>
+                    </div>
+                </div>
+                <div class="cert__card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-robot"></i>
+                    <div class="cert__card-info">
+                        <h4>Machine Learning with Python</h4>
+                        <p>IBM</p>
+                    </div>
+                </div>
+                <div class="cert__card" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="cert__card-info">
+                        <h4>Tata Group – Data Visualization</h4>
+                        <p>Forage</p>
+                    </div>
+                </div>
+                <div class="cert__card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-cloud"></i>
+                    <div class="cert__card-info">
+                        <h4>Cloud Application Developer</h4>
+                        <p>IBM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESUME DOWNLOAD ===== -->
+    <section id="resume" style="background: var(--bg-secondary); padding: 60px 0;">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;" data-aos="fade-up">
+                <span class="section__label">Download</span>
+                <h2 class="section__title" style="font-size: 2rem;">Get My <span class="highlight">Resume</span></h2>
+                <p style="color: var(--text-secondary); margin-bottom: 28px;">
+                    Ready to collaborate? Download my resume to see my full experience and skillset.
+                </p>
+                <a href="#" class="btn btn--primary" id="downloadResumeBtn"
+                    style="font-size: 1.05rem; padding: 16px 44px;">
+                    <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+                </a>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 16px;">
+                    <i class="fas fa-lock" style="opacity: 0.4;"></i> &nbsp; Updated May 2026
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 <strong>Mohammed Bilal Nadeem</strong> &nbsp;&bull;&nbsp;
+                Crafted with <span class="heart">❤</span> &nbsp;&bull;&nbsp;
+                <span style="color: var(--text-secondary);">AI/ML Engineer</span>
+            </p>
+            <div style="margin-top: 10px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://github.com/MdBilalNad" target="_blank"
+                    style="color: var(--text-secondary); font-size: 0.85rem;">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/bilalnadeem123/" target="_blank"
+                    style="color: var(--text-secondary); font-size: 0.85rem;">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="mailto:mdbilalnad117@gmail.com" style="color: var(--text-secondary); font-size: 0.85rem;">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
