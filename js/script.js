@@ -86,15 +86,11 @@ const downloadBtns = document.querySelectorAll('#downloadResumeBtn, #heroResumeB
 downloadBtns.forEach(btn => {
     btn.addEventListener('click', function(e) {
         e.preventDefault();
-        // Create a simple text file as resume (since we don't have the actual PDF)
-        // In production, replace with actual PDF URL
-        alert('📄 Resume download would start here.\n\nIn production, replace the href with your actual resume PDF URL.');
-        
-        // Uncomment below when you have a real PDF:
-        // const link = document.createElement('a');
-        // link.href = 'assets/resume.pdf';
-        // link.download = 'Mohammed_Bilal_Nadeem_Resume.pdf';
-        // link.click();
+        // Actual resume download
+        const link = document.createElement('a');
+        link.href = 'assets/resume.pdf';
+        link.download = 'Mohammed_Bilal_Nadeem_Resume.pdf';
+        link.click();
     });
 });
 
